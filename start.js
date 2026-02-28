@@ -4,7 +4,14 @@ import { chromium } from 'playwright';
 console.log('Iniciando o servidor estático (serve)...');
 
 // Inicia o servidor estático usando o pacote 'serve'
-const serverProcess = spawn('npx', ['serve', '.', '-l', '8000'], {
+const serverProcess = spawn('npx', ['serve', '.', '-l', '8080'], {
+    stdio: 'inherit',
+    shell: true
+});
+
+console.log('Iniciando o Proxy de CORS...');
+// Inicia o proxy para o ChromaDB
+const proxyProcess = spawn('node', ['proxy.js'], {
     stdio: 'inherit',
     shell: true
 });
@@ -21,7 +28,7 @@ setTimeout(async () => {
         const context = await browser.newContext({ viewport: null });
         const page = await context.newPage();
 
-        await page.goto('http://localhost:8000');
+        await page.goto('http://localhost:8080');
 
         console.log('Navegador aberto! Se você fechá-lo, este processo será encerrado.');
 
@@ -29,6 +36,7 @@ setTimeout(async () => {
         browser.on('disconnected', () => {
             console.log('\nNavegador fechado. Encerrando o processo Node...');
             serverProcess.kill();
+            proxyProcess.kill();
             process.exit(0);
         });
     } catch (error) {

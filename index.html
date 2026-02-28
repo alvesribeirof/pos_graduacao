@@ -936,15 +936,15 @@
             addLog('Módulo src/index.js carregado com sucesso.', true);
 
             // Attempt to wire existing functions
-            if (typeof mod.loadUsers === 'function') mod.loadUsers(userSelect);
+            if (typeof mod.loadUsers === 'function') mod.loadUsers();
             if (typeof mod.trainModel === 'function') {
-                trainBtn.addEventListener('click', () => wrapTrain(mod.trainModel));
+                trainBtn.addEventListener('click', mod.trainModel);
             }
             if (typeof mod.getRecommendations === 'function') {
-                recommendBtn.addEventListener('click', () => wrapRecommend(mod.getRecommendations));
+                recommendBtn.addEventListener('click', mod.getRecommendations);
             }
-            if (typeof mod.reset === 'function') {
-                resetBtn.addEventListener('click', () => { mod.reset(); resetUI(); });
+            if (typeof mod.resetApp === 'function') {
+                resetBtn.addEventListener('click', mod.resetApp);
             }
 
         } catch (e) {

@@ -1,5 +1,5 @@
-/* global tf */
 import 'https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.22.0/dist/tf.min.js';
+const tf = self.tf;
 import { workerEvents } from '../events/constants.js';
 
 // ChromaDB é opcional. Deixe false para evitar erros quando o serviço não estiver ativo.
@@ -140,8 +140,9 @@ function encodeMovie(movie, context) {
             .filter(i => i !== undefined);
 
         if (genreIndices.length > 0) {
+            const genreScale = WEIGHTS.genre / (movie.genres.length || 1);
             const genreOneHots = genreIndices.map(idx =>
-                oneHotWeighted(idx, context.numGenres, WEIGHTS.genre / movie.genres.length)
+                oneHotWeighted(idx, context.numGenres, genreScale)
             );
             genreEncoding = tf.addN(genreOneHots);
         }
@@ -156,8 +157,9 @@ function encodeMovie(movie, context) {
             .slice(0, 10); // Limitar aos 10 principais atores
 
         if (actorIndices.length > 0) {
+            const actorScale = WEIGHTS.actor / (actorIndices.length || 1);
             const actorOneHots = actorIndices.map(idx =>
-                oneHotWeighted(idx, context.numActors, WEIGHTS.actor / actorIndices.length)
+                oneHotWeighted(idx, context.numActors, actorScale)
             );
             actorEncoding = tf.addN(actorOneHots);
         }
@@ -210,27 +212,46 @@ function encodeUser(user, context) {
 
 /**
  * Cria dados de treinamento para a rede neural
+ * Otimizado para evitar recriar vetores e usar memória de forma eficiente
  */
 function createTrainingData(context) {
     const inputs = [];
     const labels = [];
 
+    // Precomputar vetores de usuários para evitar reprocessamento N vezes
+    console.log('Precomputando vetores de usuários...');
+    const userVectorCache = new Map();
     context.users
         .filter(u => u.watched && u.watched.length > 0)
         .forEach(user => {
-            const userVector = encodeUser(user, context).dataSync();
-
-            context.movies.forEach(movie => {
-                const movieVector = encodeMovie(movie, context).dataSync();
-
-                // Label: 1 se usuário assistiu, 0 se não
-                const hasWatched = user.watched.some(w => w.id === movie.id) ? 1 : 0;
-
-                // Combinar vetores
-                inputs.push([...userVector, ...movieVector]);
-                labels.push(hasWatched);
+            tf.tidy(() => {
+                const vec = encodeUser(user, context);
+                userVectorCache.set(user.id, Array.from(vec.dataSync()));
             });
         });
+
+    // Usar os vetores de filmes pré-computados no trainModel
+    const movieVectors = context.movieVectors;
+
+    context.users
+        .filter(u => u.watched && u.watched.length > 0)
+        .forEach(user => {
+            const userVector = userVectorCache.get(user.id);
+            const watchedIds = new Set(user.watched.map(w => w.id));
+
+            movieVectors.forEach(movieData => {
+                const hasWatched = watchedIds.has(movieData.id) ? 1 : 0;
+
+                // Estratégia de amostragem negativa para equilibrar o dataset
+                // Se não assistiu, incluímos com probabilidade reduzida se o dataset for gigante
+                if (hasWatched === 1 || Math.random() < 0.1) {
+                    inputs.push([...userVector, ...movieData.vector]);
+                    labels.push(hasWatched);
+                }
+            });
+        });
+
+    console.log(`Dados de treinamento criados: ${inputs.length} amostras`);
 
     return {
         inputs,
@@ -306,13 +327,13 @@ async function configureNeuralNetAndTrain(trainData) {
 
             const h = await model.fit(xs, ys, {
                 epochs: 1,
-                batchSize: 16,
+                batchSize: 32,
                 shuffle: true,
                 verbose: 0
             });
 
             epochLoss += h.history.loss[0];
-            epochAcc += h.history.acc[0];
+            epochAcc += h.history.acc[0] || h.history.accuracy[0];
             batches++;
 
             // Liberação agressiva de memória
@@ -356,22 +377,49 @@ async function trainModel({ users }) {
 
         // Pré-processar vetores dos filmes
         context.movieVectors = movies.map(movie => {
-            return {
-                id: movie.id,
-                title: movie.title,
-                meta: { ...movie },
-                vector: encodeMovie(movie, context).dataSync()
-            };
+            return tf.tidy(() => {
+                return {
+                    id: movie.id,
+                    title: movie.title,
+                    meta: { ...movie },
+                    vector: Array.from(encodeMovie(movie, context).dataSync())
+                };
+            });
         });
 
         _globalCtx = context;
 
         // opcional: inicializar ChromaDB e armazenar vetores
         if (ENABLE_CHROMADB && ChromaDBClient && !chromaClient) {
-            chromaClient = new ChromaDBClient();
-            await chromaClient.initCollection();
-            const vectors = context.movieVectors.map(m => m.vector);
-            await chromaClient.storeMovieEmbeddings(context.movies, vectors);
+            try {
+                console.log('🔗 Conectando ao ChromaDB...');
+                chromaClient = new ChromaDBClient();
+                await chromaClient.initCollection();
+                const vectors = context.movieVectors.map(m => m.vector);
+
+                console.log('📤 Sincronizando vetores com ChromaDB...');
+                await chromaClient.storeMovieEmbeddings(context.movies, vectors);
+
+                postMessage({
+                    type: workerEvents.trainingLog,
+                    epoch: 'System',
+                    loss: 0,
+                    accuracy: 0,
+                    valLoss: 0,
+                    valAccuracy: 0,
+                    customMessage: '✅ Vetores sincronizados com ChromaDB com sucesso!'
+                });
+            } catch (chromaErr) {
+                console.warn('⚠️ ChromaDB indisponível, usando busca local:', chromaErr.message);
+                chromaClient = null; // Desabilita para esta sessão
+                postMessage({
+                    type: workerEvents.trainingLog,
+                    epoch: 'System',
+                    loss: 0,
+                    accuracy: 0,
+                    customMessage: `⚠️ ChromaDB não disponível: ${chromaErr.message}. Usando busca local.`
+                });
+            }
         }
 
         // Criar dados de treinamento
@@ -389,7 +437,7 @@ async function trainModel({ users }) {
     } catch (error) {
         console.error('❌ Erro no treinamento:', error);
         postMessage({
-            type: 'trainingError',
+            type: workerEvents.trainingError,
             error: error.message
         });
     }
@@ -410,14 +458,41 @@ async function recommend({ user, topN = 10 }) {
         // Codificar o usuário
         const userVector = encodeUser(user, context).dataSync();
 
-        // se Chroma estiver presente, buscar subset
+        // se Chroma estiver presente, buscar subset (OBRIGATÓRIO se ENABLE_CHROMADB)
         let candidates = context.movieVectors;
         if (chromaClient) {
+            console.log('🔍 Buscando candidatos via ChromaDB (Busca Vetorial)...');
             const similar = await chromaClient.querySimilarMovies(userVector, 50);
-            if (similar && similar.ids) {
+
+            if (similar && similar.ids && similar.ids.length > 0) {
                 const idSet = new Set(similar.ids);
                 candidates = context.movieVectors.filter(m => idSet.has(m.id));
+
+                postMessage({
+                    type: workerEvents.trainingLog,
+                    epoch: 'Search',
+                    loss: 0,
+                    accuracy: 0,
+                    customMessage: `🎯 ChromaDB retornou ${candidates.length} candidatos similares.`
+                });
+            } else {
+                console.warn('⚠️ ChromaDB não retornou resultados, usando fallback local.');
+                postMessage({
+                    type: workerEvents.trainingLog,
+                    epoch: 'Search',
+                    loss: 0,
+                    accuracy: 0,
+                    customMessage: '⚠️ Alerta: ChromaDB vazio ou offline. Usando fallback local.'
+                });
             }
+        } else if (ENABLE_CHROMADB) {
+            postMessage({
+                type: workerEvents.trainingLog,
+                epoch: 'Search',
+                loss: 0,
+                accuracy: 0,
+                customMessage: '❌ Erro: ChromaDB habilitado mas não inicializado.'
+            });
         }
 
         // Criar pares (usuário, filme)
@@ -457,7 +532,7 @@ async function recommend({ user, topN = 10 }) {
     } catch (error) {
         console.error('❌ Erro na recomendação:', error);
         postMessage({
-            type: 'recommendationError',
+            type: workerEvents.recommendationError,
             error: error.message
         });
     }

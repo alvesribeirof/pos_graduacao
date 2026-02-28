@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node start.js",
-    "dev": "serve . -l 8000",
+    "dev": "serve . -l 8080",
     "download-data": "node utils/kaggleDownloader.js",
     "lint": "eslint .",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --runInBand"

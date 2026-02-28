@@ -23,7 +23,7 @@ let appState = {
 /**
  * Inicializa a aplicação
  */
-async function init() {
+export async function init() {
     console.log('🚀 Iniciando aplicação...');
 
     try {
@@ -45,7 +45,7 @@ async function init() {
 /**
  * Carrega lista de usuários do servidor
  */
-async function loadUsers() {
+export async function loadUsers() {
     try {
         const response = await fetch('/data/users.json');
         appState.allUsers = await response.json();
@@ -114,8 +114,8 @@ function initWorker() {
             case workerEvents.recommend:
                 handleRecommendations(data);
                 break;
-            case 'trainingError':
-            case 'recommendationError':
+            case workerEvents.trainingError:
+            case workerEvents.recommendationError:
                 handleWorkerError(data);
                 break;
             default:
@@ -139,7 +139,7 @@ function setupEventListeners() {
 /**
  * Inicia treinamento do modelo
  */
-function trainModel() {
+export function trainModel() {
     if (appState.isTraining) {
         showMessage('Modelo já está sendo treinado...', 'info');
         return;
@@ -163,8 +163,10 @@ function trainModel() {
 
     // Limpar logs anteriores
     const logsDiv = document.getElementById('trainingLogs');
-    logsDiv.innerHTML = '';
-    logsDiv.style.display = 'block';
+    if (logsDiv) {
+        logsDiv.innerHTML = '';
+        logsDiv.style.display = 'block';
+    }
 
     // Enviar mensagem ao worker
     appState.worker.postMessage({
@@ -185,7 +187,15 @@ function handleTrainingLog(data) {
     const logsDiv = document.getElementById('trainingLogs');
     const entry = document.createElement('div');
     entry.className = 'log-entry';
-    entry.textContent = `Epoch ${epoch}: loss=${loss.toFixed(4)}, acc=${accuracy.toFixed(4)}, val_loss=${valLoss?.toFixed(4) || 'N/A'}, val_acc=${valAccuracy?.toFixed(4) || 'N/A'}`;
+
+    if (data.customMessage) {
+        entry.textContent = data.customMessage;
+        entry.style.color = '#00ffcc'; // Cor de destaque para mensagens do sistema/chroma
+        entry.style.fontWeight = 'bold';
+    } else {
+        entry.textContent = `Epoch ${epoch}: loss=${loss.toFixed(4)}, acc=${accuracy.toFixed(4)}, val_loss=${valLoss?.toFixed(4) || 'N/A'}, val_acc=${valAccuracy?.toFixed(4) || 'N/A'}`;
+    }
+
     logsDiv.appendChild(entry);
     logsDiv.scrollTop = logsDiv.scrollHeight;
 }
@@ -218,7 +228,7 @@ function handleProgressUpdate(data) {
 /**
  * Obtém recomendações para usuário atual
  */
-function getRecommendations() {
+export function getRecommendations() {
     if (!appState.isModelTrained) {
         showError('Treine o modelo antes de obter recomendações');
         return;
@@ -345,7 +355,7 @@ function handleWorkerError(data) {
 /**
  * Reseta a aplicação
  */
-function resetApp() {
+export function resetApp() {
     appState.isTraining = false;
     appState.isModelTrained = false;
     appState.recommendations = [];

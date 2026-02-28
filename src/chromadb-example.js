@@ -19,66 +19,118 @@
  * docker run -p 8000:8000 chromadb/chroma
  */
 class ChromaDBClient {
-    constructor(baseUrl = 'http://localhost:8000') {
+    constructor(baseUrl = 'http://localhost:8001') {
         this.baseUrl = baseUrl;
+        this.tenant = 'default_tenant';
+        this.database = 'default_database';
         this.collectionName = 'movies';
+        this.collectionId = null; // UUID retornado pela API v2
+    }
+
+    get collectionsBase() {
+        return `${this.baseUrl}/api/v2/tenants/${this.tenant}/databases/${this.database}/collections`;
     }
 
     /**
-     * Inicializa coleção de filmes
+     * Inicializa coleção de filmes e armazena o UUID retornado pela API v2
      */
     async initCollection() {
         try {
-            await fetch(`${this.baseUrl}/api/v2/collections`, {
+            // Tenta criar a coleção (get_or_create)
+            const createRes = await fetch(this.collectionsBase, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
                     name: this.collectionName,
-                    metadata: {
-                        description: 'Vetores de filmes para recomendação'
-                    },
+                    metadata: { description: 'Vetores de filmes para recomendação' },
                     get_or_create: true
                 })
             });
-            console.log('✅ Coleção ChromaDB criada/carregada');
+
+            if (createRes.ok) {
+                const data = await createRes.json();
+                this.collectionId = data.id;
+                console.log(`✅ Coleção ChromaDB carregada. UUID: ${this.collectionId}`);
+                return;
+            }
+
+            // Fallback: busca pelo nome
+            const getRes = await fetch(`${this.collectionsBase}/${this.collectionName}`);
+            if (getRes.ok) {
+                const data = await getRes.json();
+                this.collectionId = data.id;
+                console.log(`✅ Coleção ChromaDB existente encontrada. UUID: ${this.collectionId}`);
+                return;
+            }
+
+            throw new Error(`Não foi possível criar ou carregar a coleção: HTTP ${createRes.status}`);
         } catch (error) {
-            console.warn('⚠️ ChromaDB não está rodando:', error.message);
+            console.warn('⚠️ ChromaDB não está rodando ou acessível:', error.message);
+            throw error;
         }
     }
 
     /**
-     * Armazena vetores de filmes
+     * Armazena vetores de filmes em blocos (batching) para evitar timeouts
      */
     async storeMovieEmbeddings(movies, vectors) {
-        try {
-            const response = await fetch(
-                `${this.baseUrl}/api/v2/collections/${this.collectionName}/add`,
-                {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                        ids: movies.map(m => m.id.toString()),
-                        embeddings: vectors.map(v => Array.from(v)),
-                        documents: movies.map(m => m.title),
-                        metadatas: movies.map(m => ({
-                            title: m.title,
-                            year: m.year,
-                            rating: m.rating,
-                            genres: m.genres.join(','),
-                            director: m.director
-                        }))
-                    })
-                }
-            );
+        const BATCH_SIZE = 100;
+        console.log(`[ChromaDB] Iniciando sincronização de ${movies.length} filmes em blocos de ${BATCH_SIZE}...`);
 
-            if (!response.ok) {
-                throw new Error(`HTTP ${response.status}`);
+        for (let i = 0; i < movies.length; i += BATCH_SIZE) {
+            const end = Math.min(i + BATCH_SIZE, movies.length);
+            const batchMovies = movies.slice(i, end);
+            const batchVectors = vectors.slice(i, end);
+
+            if (!this.collectionId) {
+                console.warn('⚠️ UUID da coleção não disponível. Pulando sincronização.');
+                return;
             }
 
-            console.log(`✅ ${movies.length} filmes armazenados em ChromaDB`);
-        } catch (error) {
-            console.warn('⚠️ Erro ao armazenar em ChromaDB:', error.message);
+            try {
+                const response = await fetch(
+                    `${this.collectionsBase}/${this.collectionId}/add`,
+                    {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            ids: batchMovies.map(m => m.id.toString()),
+                            embeddings: batchVectors.map(v => Array.from(v)),
+                            documents: batchMovies.map(m => m.title),
+                            metadatas: batchMovies.map(m => ({
+                                title: m.title,
+                                year: m.year,
+                                rating: m.rating,
+                                genres: (m.genres || []).join(','),
+                                director: m.director || 'Unknown'
+                            }))
+                        })
+                    }
+                );
+
+                if (!response.ok) {
+                    throw new Error(`Erro no bloco ${i}-${end}: HTTP ${response.status}`);
+                }
+
+                console.log(`✅ Bloco ${i}-${end} sincronizado`);
+            } catch (error) {
+                console.warn(`⚠️ Erro ao sincronizar bloco ${i}-${end}:`, error.message);
+                // Continuar para o próximo bloco ou parar? Vamos registrar e continuar.
+            }
         }
+
+        console.log(`✅ Sincronização de ${movies.length} filmes concluída.`);
+    }
+
+    /**
+     * Retorna o total de itens na coleção
+     */
+    async getCount() {
+        try {
+            const res = await fetch(`${this.collectionsBase}/${this.collectionId}/count`);
+            if (res.ok) return await res.json();
+        } catch (_) { }
+        return 0;
     }
 
     /**
@@ -86,21 +138,36 @@ class ChromaDBClient {
      */
     async querySimilarMovies(userVector, topN = 50) {
         try {
+            if (!this.collectionId) {
+                console.warn('⚠️ UUID da coleção não disponível para query.');
+                return null;
+            }
+
+            // n_results não pode ser maior que o número de itens na coleção
+            const count = await this.getCount();
+            const nResults = Math.min(topN, count);
+            if (nResults === 0) {
+                console.warn('⚠️ ChromaDB está vazio — sem itens para buscar.');
+                return null;
+            }
+
             const response = await fetch(
-                `${this.baseUrl}/api/v2/collections/${this.collectionName}/query`,
+                `${this.collectionsBase}/${this.collectionId}/query`,
                 {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({
-                        query_embeddings: [Array.from(userVector)],
-                        n_results: topN,
-                        include: ['documents', 'embeddings', 'metadatas', 'distances']
+                        // Sanitizar: substituir NaN/null por 0.0 (ChromaDB rejeita valores inválidos)
+                        query_embeddings: [Array.from(userVector).map(v => (isFinite(v) && v !== null ? v : 0.0))],
+                        n_results: nResults,
+                        include: ['documents', 'metadatas', 'distances']
                     })
                 }
             );
 
             if (!response.ok) {
-                throw new Error(`HTTP ${response.status}`);
+                const body = await response.text();
+                throw new Error(`HTTP ${response.status}: ${body}`);
             }
 
             const result = await response.json();
