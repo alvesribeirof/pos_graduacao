@@ -35,3 +35,8 @@ out/
 # Temp
 tmp/
 temp/
+
+# Arquivos de Dados e Banco Local (Muito Pesados)
+data/movielens/
+chroma_data/
+__pycache__/
