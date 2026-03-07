@@ -1,0 +1,2637 @@
+[
+  {
+    "id": 1,
+    "title": "Toy Story",
+    "year": 1995,
+    "rating": 3.921239561324077,
+    "genres": [
+      "Adventure",
+      "Animation",
+      "Children",
+      "Comedy",
+      "Fantasy"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie1/300/450"
+  },
+  {
+    "id": 2,
+    "title": "Jumanji",
+    "year": 1995,
+    "rating": 3.2119768016904193,
+    "genres": [
+      "Adventure",
+      "Children",
+      "Fantasy"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie2/300/450"
+  },
+  {
+    "id": 3,
+    "title": "Grumpier Old Men",
+    "year": 1995,
+    "rating": 3.1510404397330194,
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie3/300/450"
+  },
+  {
+    "id": 4,
+    "title": "Waiting to Exhale",
+    "year": 1995,
+    "rating": 2.8613933236574747,
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie4/300/450"
+  },
+  {
+    "id": 5,
+    "title": "Father of the Bride Part II",
+    "year": 1995,
+    "rating": 3.064591727653976,
+    "genres": [
+      "Comedy"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie5/300/450"
+  },
+  {
+    "id": 6,
+    "title": "Heat",
+    "year": 1995,
+    "rating": 3.8349303318130468,
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie6/300/450"
+  },
+  {
+    "id": 7,
+    "title": "Sabrina",
+    "year": 1995,
+    "rating": 3.3664840675873777,
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie7/300/450"
+  },
+  {
+    "id": 8,
+    "title": "Tom and Huck",
+    "year": 1995,
+    "rating": 3.142049469964664,
+    "genres": [
+      "Adventure",
+      "Children"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie8/300/450"
+  },
+  {
+    "id": 9,
+    "title": "Sudden Death",
+    "year": 1995,
+    "rating": 3.0049242424242424,
+    "genres": [
+      "Action"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie9/300/450"
+  },
+  {
+    "id": 10,
+    "title": "GoldenEye",
+    "year": 1995,
+    "rating": 3.430029305292191,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie10/300/450"
+  },
+  {
+    "id": 11,
+    "title": "American President, The",
+    "year": 1995,
+    "rating": 3.667712806959586,
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie11/300/450"
+  },
+  {
+    "id": 12,
+    "title": "Dracula: Dead and Loving It",
+    "year": 1995,
+    "rating": 2.6197659297789335,
+    "genres": [
+      "Comedy",
+      "Horror"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie12/300/450"
+  },
+  {
+    "id": 13,
+    "title": "Balto",
+    "year": 1995,
+    "rating": 3.272416153319644,
+    "genres": [
+      "Adventure",
+      "Animation",
+      "Children"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie13/300/450"
+  },
+  {
+    "id": 14,
+    "title": "Nixon",
+    "year": 1995,
+    "rating": 3.432082364662903,
+    "genres": [
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie14/300/450"
+  },
+  {
+    "id": 15,
+    "title": "Cutthroat Island",
+    "year": 1995,
+    "rating": 2.7219931271477664,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Romance"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie15/300/450"
+  },
+  {
+    "id": 16,
+    "title": "Casino",
+    "year": 1995,
+    "rating": 3.7874554444061173,
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie16/300/450"
+  },
+  {
+    "id": 17,
+    "title": "Sense and Sensibility",
+    "year": 1995,
+    "rating": 3.9685730875308463,
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie17/300/450"
+  },
+  {
+    "id": 18,
+    "title": "Four Rooms",
+    "year": 1995,
+    "rating": 3.3736305977320775,
+    "genres": [
+      "Comedy"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie18/300/450"
+  },
+  {
+    "id": 19,
+    "title": "Ace Ventura: When Nature Calls",
+    "year": 1995,
+    "rating": 2.6074123603018435,
+    "genres": [
+      "Comedy"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie19/300/450"
+  },
+  {
+    "id": 20,
+    "title": "Money Train",
+    "year": 1995,
+    "rating": 2.8807541625857005,
+    "genres": [
+      "Action",
+      "Comedy",
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie20/300/450"
+  },
+  {
+    "id": 21,
+    "title": "Get Shorty",
+    "year": 1995,
+    "rating": 3.581688505556477,
+    "genres": [
+      "Comedy",
+      "Crime",
+      "Thriller"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie21/300/450"
+  },
+  {
+    "id": 22,
+    "title": "Copycat",
+    "year": 1995,
+    "rating": 3.319399677679291,
+    "genres": [
+      "Crime",
+      "Drama",
+      "Horror",
+      "Mystery",
+      "Thriller"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie22/300/450"
+  },
+  {
+    "id": 23,
+    "title": "Assassins",
+    "year": 1995,
+    "rating": 3.1482352941176472,
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie23/300/450"
+  },
+  {
+    "id": 24,
+    "title": "Powder",
+    "year": 1995,
+    "rating": 3.199849454271735,
+    "genres": [
+      "Drama",
+      "Sci-Fi"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie24/300/450"
+  },
+  {
+    "id": 25,
+    "title": "Leaving Las Vegas",
+    "year": 1995,
+    "rating": 3.689509581032803,
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie25/300/450"
+  },
+  {
+    "id": 26,
+    "title": "Othello",
+    "year": 1995,
+    "rating": 3.628856624319419,
+    "genres": [
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie26/300/450"
+  },
+  {
+    "id": 27,
+    "title": "Now and Then",
+    "year": 1995,
+    "rating": 3.413520097442144,
+    "genres": [
+      "Children",
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie27/300/450"
+  },
+  {
+    "id": 28,
+    "title": "Persuasion",
+    "year": 1995,
+    "rating": 4.057545973367152,
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie28/300/450"
+  },
+  {
+    "id": 29,
+    "title": "City of Lost Children, The (Cité des enfants perdus, La)",
+    "year": 1995,
+    "rating": 3.952230046948357,
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Fantasy",
+      "Mystery",
+      "Sci-Fi"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie29/300/450"
+  },
+  {
+    "id": 30,
+    "title": "Shanghai Triad (Yao a yao yao dao waipo qiao)",
+    "year": 1995,
+    "rating": 3.633879781420765,
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie30/300/450"
+  },
+  {
+    "id": 31,
+    "title": "Dangerous Minds",
+    "year": 1995,
+    "rating": 3.250344462109168,
+    "genres": [
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie31/300/450"
+  },
+  {
+    "id": 32,
+    "title": "Twelve Monkeys (a.k.a. 12 Monkeys)",
+    "year": 1995,
+    "rating": 3.8980546909737663,
+    "genres": [
+      "Mystery",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie32/300/450"
+  },
+  {
+    "id": 33,
+    "title": "Wings of Courage",
+    "year": 1995,
+    "rating": 3.0076923076923077,
+    "genres": [
+      "Adventure",
+      "Romance",
+      "IMAX"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie33/300/450"
+  },
+  {
+    "id": 34,
+    "title": "Babe",
+    "year": 1995,
+    "rating": 3.6430940939389242,
+    "genres": [
+      "Children",
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie34/300/450"
+  },
+  {
+    "id": 35,
+    "title": "Carrington",
+    "year": 1995,
+    "rating": 3.5016744809109177,
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie35/300/450"
+  },
+  {
+    "id": 36,
+    "title": "Dead Man Walking",
+    "year": 1995,
+    "rating": 3.9427170935652844,
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie36/300/450"
+  },
+  {
+    "id": 37,
+    "title": "Across the Sea of Time",
+    "year": 1995,
+    "rating": 3.0176470588235293,
+    "genres": [
+      "Documentary",
+      "IMAX"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie37/300/450"
+  },
+  {
+    "id": 38,
+    "title": "It Takes Two",
+    "year": 1995,
+    "rating": 2.857789855072464,
+    "genres": [
+      "Children",
+      "Comedy"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie38/300/450"
+  },
+  {
+    "id": 39,
+    "title": "Clueless",
+    "year": 1995,
+    "rating": 3.413632208425383,
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie39/300/450"
+  },
+  {
+    "id": 40,
+    "title": "Cry, the Beloved Country",
+    "year": 1995,
+    "rating": 3.646726862302483,
+    "genres": [
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie40/300/450"
+  },
+  {
+    "id": 41,
+    "title": "Richard III",
+    "year": 1995,
+    "rating": 3.8521006611217743,
+    "genres": [
+      "Drama",
+      "War"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie41/300/450"
+  },
+  {
+    "id": 42,
+    "title": "Dead Presidents",
+    "year": 1995,
+    "rating": 3.0551276854479124,
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie42/300/450"
+  },
+  {
+    "id": 43,
+    "title": "Restoration",
+    "year": 1995,
+    "rating": 3.4684561128526648,
+    "genres": [
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie43/300/450"
+  },
+  {
+    "id": 44,
+    "title": "Mortal Kombat",
+    "year": 1995,
+    "rating": 2.653874918201365,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie44/300/450"
+  },
+  {
+    "id": 45,
+    "title": "To Die For",
+    "year": 1995,
+    "rating": 3.3843613567670436,
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Thriller"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie45/300/450"
+  },
+  {
+    "id": 46,
+    "title": "How to Make an American Quilt",
+    "year": 1995,
+    "rating": 3.2748829953198126,
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie46/300/450"
+  },
+  {
+    "id": 47,
+    "title": "Seven (a.k.a. Se7en)",
+    "year": 1995,
+    "rating": 4.053492566302111,
+    "genres": [
+      "Mystery",
+      "Thriller"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie47/300/450"
+  },
+  {
+    "id": 48,
+    "title": "Pocahontas",
+    "year": 1995,
+    "rating": 2.9461137513414073,
+    "genres": [
+      "Animation",
+      "Children",
+      "Drama",
+      "Musical",
+      "Romance"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie48/300/450"
+  },
+  {
+    "id": 49,
+    "title": "When Night Is Falling",
+    "year": 1995,
+    "rating": 3.5847457627118646,
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie49/300/450"
+  },
+  {
+    "id": 50,
+    "title": "Usual Suspects, The",
+    "year": 1995,
+    "rating": 4.334372207803259,
+    "genres": [
+      "Crime",
+      "Mystery",
+      "Thriller"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie50/300/450"
+  },
+  {
+    "id": 51,
+    "title": "Guardian Angel",
+    "year": 1994,
+    "rating": 2.5555555555555554,
+    "genres": [
+      "Action",
+      "Drama",
+      "Thriller"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie51/300/450"
+  },
+  {
+    "id": 52,
+    "title": "Mighty Aphrodite",
+    "year": 1995,
+    "rating": 3.541148068669528,
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie52/300/450"
+  },
+  {
+    "id": 53,
+    "title": "Lamerica",
+    "year": 1994,
+    "rating": 3.6966666666666668,
+    "genres": [
+      "Adventure",
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie53/300/450"
+  },
+  {
+    "id": 54,
+    "title": "Big Green, The",
+    "year": 1995,
+    "rating": 2.8546025104602513,
+    "genres": [
+      "Children",
+      "Comedy"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie54/300/450"
+  },
+  {
+    "id": 55,
+    "title": "Georgia",
+    "year": 1995,
+    "rating": 3.241214057507987,
+    "genres": [
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie55/300/450"
+  },
+  {
+    "id": 56,
+    "title": "Kids of the Round Table",
+    "year": 1995,
+    "rating": 1.8714285714285714,
+    "genres": [
+      "Adventure",
+      "Children",
+      "Fantasy"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie56/300/450"
+  },
+  {
+    "id": 57,
+    "title": "Home for the Holidays",
+    "year": 1995,
+    "rating": 3.324518245182452,
+    "genres": [
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie57/300/450"
+  },
+  {
+    "id": 58,
+    "title": "Postman, The (Postino, Il)",
+    "year": 1994,
+    "rating": 3.978396397956533,
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie58/300/450"
+  },
+  {
+    "id": 59,
+    "title": "Confessional, The (Confessionnal, Le)",
+    "year": 1995,
+    "rating": 3.56020942408377,
+    "genres": [
+      "Drama",
+      "Mystery"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie59/300/450"
+  },
+  {
+    "id": 60,
+    "title": "Indian in the Cupboard, The",
+    "year": 1995,
+    "rating": 3.114446380484714,
+    "genres": [
+      "Adventure",
+      "Children",
+      "Fantasy"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie60/300/450"
+  },
+  {
+    "id": 61,
+    "title": "Eye for an Eye",
+    "year": 1996,
+    "rating": 3.3231039017974573,
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie61/300/450"
+  },
+  {
+    "id": 62,
+    "title": "Mr. Holland's Opus",
+    "year": 1995,
+    "rating": 3.7318249832309993,
+    "genres": [
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie62/300/450"
+  },
+  {
+    "id": 63,
+    "title": "Don't Be a Menace to South Central While Drinking Your Juice in the Hood",
+    "year": 1996,
+    "rating": 3.06662382176521,
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie63/300/450"
+  },
+  {
+    "id": 64,
+    "title": "Two if by Sea",
+    "year": 1996,
+    "rating": 2.829817833173538,
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie64/300/450"
+  },
+  {
+    "id": 65,
+    "title": "Bio-Dome",
+    "year": 1996,
+    "rating": 2.3942228618421053,
+    "genres": [
+      "Comedy"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie65/300/450"
+  },
+  {
+    "id": 66,
+    "title": "Lawnmower Man 2: Beyond Cyberspace",
+    "year": 1996,
+    "rating": 2.144242935470266,
+    "genres": [
+      "Action",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie66/300/450"
+  },
+  {
+    "id": 67,
+    "title": "Two Bits",
+    "year": 1995,
+    "rating": 3.35,
+    "genres": [
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie67/300/450"
+  },
+  {
+    "id": 68,
+    "title": "French Twist (Gazon maudit)",
+    "year": 1995,
+    "rating": 3.4369951534733443,
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie68/300/450"
+  },
+  {
+    "id": 69,
+    "title": "Friday",
+    "year": 1995,
+    "rating": 3.560634328358209,
+    "genres": [
+      "Comedy"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie69/300/450"
+  },
+  {
+    "id": 70,
+    "title": "From Dusk Till Dawn",
+    "year": 1996,
+    "rating": 3.2774543738200124,
+    "genres": [
+      "Action",
+      "Comedy",
+      "Horror",
+      "Thriller"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie70/300/450"
+  },
+  {
+    "id": 71,
+    "title": "Fair Game",
+    "year": 1995,
+    "rating": 2.3552123552123554,
+    "genres": [
+      "Action"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie71/300/450"
+  },
+  {
+    "id": 72,
+    "title": "Kicking and Screaming",
+    "year": 1995,
+    "rating": 3.502439024390244,
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie72/300/450"
+  },
+  {
+    "id": 73,
+    "title": "Misérables, Les",
+    "year": 1995,
+    "rating": 3.8067681895093064,
+    "genres": [
+      "Drama",
+      "War"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie73/300/450"
+  },
+  {
+    "id": 74,
+    "title": "Bed of Roses",
+    "year": 1996,
+    "rating": 3.3022196926579395,
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie74/300/450"
+  },
+  {
+    "id": 75,
+    "title": "Big Bully",
+    "year": 1996,
+    "rating": 2.4623655913978495,
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie75/300/450"
+  },
+  {
+    "id": 76,
+    "title": "Screamers",
+    "year": 1995,
+    "rating": 3.0090236686390535,
+    "genres": [
+      "Action",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie76/300/450"
+  },
+  {
+    "id": 77,
+    "title": "Nico Icon",
+    "year": 1995,
+    "rating": 3.429864253393665,
+    "genres": [
+      "Documentary"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie77/300/450"
+  },
+  {
+    "id": 78,
+    "title": "Crossing Guard, The",
+    "year": 1995,
+    "rating": 3.180668841761827,
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie78/300/450"
+  },
+  {
+    "id": 79,
+    "title": "Juror, The",
+    "year": 1996,
+    "rating": 3.1285456187895213,
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie79/300/450"
+  },
+  {
+    "id": 80,
+    "title": "White Balloon, The (Badkonake sefid)",
+    "year": 1995,
+    "rating": 3.7243478260869565,
+    "genres": [
+      "Children",
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie80/300/450"
+  },
+  {
+    "id": 81,
+    "title": "Things to Do in Denver When You're Dead",
+    "year": 1995,
+    "rating": 3.267373013399813,
+    "genres": [
+      "Crime",
+      "Drama",
+      "Romance"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie81/300/450"
+  },
+  {
+    "id": 82,
+    "title": "Antonia's Line (Antonia)",
+    "year": 1995,
+    "rating": 4.004925137903862,
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie82/300/450"
+  },
+  {
+    "id": 83,
+    "title": "Once Upon a Time... When We Were Colored",
+    "year": 1995,
+    "rating": 3.653198653198653,
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie83/300/450"
+  },
+  {
+    "id": 84,
+    "title": "Last Summer in the Hamptons",
+    "year": 1995,
+    "rating": 3.4177215189873418,
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie84/300/450"
+  },
+  {
+    "id": 85,
+    "title": "Angels and Insects",
+    "year": 1995,
+    "rating": 3.531134856300663,
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie85/300/450"
+  },
+  {
+    "id": 86,
+    "title": "White Squall",
+    "year": 1996,
+    "rating": 3.483402971216342,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie86/300/450"
+  },
+  {
+    "id": 87,
+    "title": "Dunston Checks In",
+    "year": 1996,
+    "rating": 2.3596311475409837,
+    "genres": [
+      "Children",
+      "Comedy"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie87/300/450"
+  },
+  {
+    "id": 88,
+    "title": "Black Sheep",
+    "year": 1996,
+    "rating": 3.1076274671052633,
+    "genres": [
+      "Comedy"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie88/300/450"
+  },
+  {
+    "id": 89,
+    "title": "Nick of Time",
+    "year": 1995,
+    "rating": 3.139821373575608,
+    "genres": [
+      "Action",
+      "Thriller"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie89/300/450"
+  },
+  {
+    "id": 90,
+    "title": "Journey of August King, The",
+    "year": 1995,
+    "rating": 3.357476635514019,
+    "genres": [
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie90/300/450"
+  },
+  {
+    "id": 92,
+    "title": "Mary Reilly",
+    "year": 1996,
+    "rating": 2.8541033434650456,
+    "genres": [
+      "Drama",
+      "Horror",
+      "Thriller"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie92/300/450"
+  },
+  {
+    "id": 93,
+    "title": "Vampire in Brooklyn",
+    "year": 1995,
+    "rating": 2.528738555442523,
+    "genres": [
+      "Comedy",
+      "Horror",
+      "Romance"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie93/300/450"
+  },
+  {
+    "id": 94,
+    "title": "Beautiful Girls",
+    "year": 1996,
+    "rating": 3.526923076923077,
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie94/300/450"
+  },
+  {
+    "id": 95,
+    "title": "Broken Arrow",
+    "year": 1996,
+    "rating": 3.0946435034382915,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie95/300/450"
+  },
+  {
+    "id": 96,
+    "title": "In the Bleak Midwinter",
+    "year": 1995,
+    "rating": 3.6873706004140785,
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie96/300/450"
+  },
+  {
+    "id": 97,
+    "title": "Hate (Haine, La)",
+    "year": 1995,
+    "rating": 3.9964340295466125,
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie97/300/450"
+  },
+  {
+    "id": 98,
+    "title": "Shopping",
+    "year": 1994,
+    "rating": 2.4876543209876543,
+    "genres": [
+      "Action",
+      "Thriller"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie98/300/450"
+  },
+  {
+    "id": 99,
+    "title": "Heidi Fleiss: Hollywood Madam",
+    "year": 1995,
+    "rating": 3.105371900826446,
+    "genres": [
+      "Documentary"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie99/300/450"
+  },
+  {
+    "id": 100,
+    "title": "City Hall",
+    "year": 1996,
+    "rating": 3.22138517618469,
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie100/300/450"
+  },
+  {
+    "id": 101,
+    "title": "Bottle Rocket",
+    "year": 1996,
+    "rating": 3.786295951605398,
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Crime",
+      "Romance"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie101/300/450"
+  },
+  {
+    "id": 102,
+    "title": "Mr. Wrong",
+    "year": 1996,
+    "rating": 2.4294678714859437,
+    "genres": [
+      "Comedy"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie102/300/450"
+  },
+  {
+    "id": 103,
+    "title": "Unforgettable",
+    "year": 1996,
+    "rating": 3.2691968225948806,
+    "genres": [
+      "Mystery",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie103/300/450"
+  },
+  {
+    "id": 104,
+    "title": "Happy Gilmore",
+    "year": 1996,
+    "rating": 3.4170806586659226,
+    "genres": [
+      "Comedy"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie104/300/450"
+  },
+  {
+    "id": 105,
+    "title": "Bridges of Madison County, The",
+    "year": 1995,
+    "rating": 3.326299376299376,
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie105/300/450"
+  },
+  {
+    "id": 106,
+    "title": "Nobody Loves Me (Keiner liebt mich)",
+    "year": 1994,
+    "rating": 3.4440298507462686,
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie106/300/450"
+  },
+  {
+    "id": 107,
+    "title": "Muppet Treasure Island",
+    "year": 1996,
+    "rating": 3.2153387703889584,
+    "genres": [
+      "Adventure",
+      "Children",
+      "Comedy",
+      "Musical"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie107/300/450"
+  },
+  {
+    "id": 108,
+    "title": "Catwalk",
+    "year": 1996,
+    "rating": 3.092,
+    "genres": [
+      "Documentary"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie108/300/450"
+  },
+  {
+    "id": 109,
+    "title": "Headless Body in Topless Bar",
+    "year": 1995,
+    "rating": 2.0625,
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Thriller"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie109/300/450"
+  },
+  {
+    "id": 110,
+    "title": "Braveheart",
+    "year": 1995,
+    "rating": 4.042533802004873,
+    "genres": [
+      "Action",
+      "Drama",
+      "War"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie110/300/450"
+  },
+  {
+    "id": 111,
+    "title": "Taxi Driver",
+    "year": 1976,
+    "rating": 4.110575548384461,
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie111/300/450"
+  },
+  {
+    "id": 112,
+    "title": "Rumble in the Bronx (Hont faan kui)",
+    "year": 1995,
+    "rating": 3.412573591253154,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy",
+      "Crime"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie112/300/450"
+  },
+  {
+    "id": 113,
+    "title": "Before and After",
+    "year": 1996,
+    "rating": 3.1092745638200183,
+    "genres": [
+      "Drama",
+      "Mystery"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie113/300/450"
+  },
+  {
+    "id": 114,
+    "title": "Margaret's Museum",
+    "year": 1995,
+    "rating": 3.619433198380567,
+    "genres": [
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie114/300/450"
+  },
+  {
+    "id": 115,
+    "title": "Happiness Is in the Field (Bonheur est dans le pré, Le)",
+    "year": 1995,
+    "rating": 3.4078947368421053,
+    "genres": [
+      "Comedy"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie115/300/450"
+  },
+  {
+    "id": 116,
+    "title": "Anne Frank Remembered",
+    "year": 1995,
+    "rating": 3.9373024236037937,
+    "genres": [
+      "Documentary"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie116/300/450"
+  },
+  {
+    "id": 117,
+    "title": "Young Poisoner's Handbook, The",
+    "year": 1995,
+    "rating": 3.589398734177215,
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie117/300/450"
+  },
+  {
+    "id": 118,
+    "title": "If Lucy Fell",
+    "year": 1996,
+    "rating": 3.0110035211267605,
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie118/300/450"
+  },
+  {
+    "id": 119,
+    "title": "Steal Big, Steal Little",
+    "year": 1995,
+    "rating": 2.772727272727273,
+    "genres": [
+      "Comedy"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie119/300/450"
+  },
+  {
+    "id": 120,
+    "title": "Race the Sun",
+    "year": 1996,
+    "rating": 2.880952380952381,
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie120/300/450"
+  },
+  {
+    "id": 121,
+    "title": "Boys of St. Vincent, The",
+    "year": 1992,
+    "rating": 3.7532855436081243,
+    "genres": [
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie121/300/450"
+  },
+  {
+    "id": 122,
+    "title": "Boomerang",
+    "year": 1992,
+    "rating": 2.8676697530864197,
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie122/300/450"
+  },
+  {
+    "id": 123,
+    "title": "Chungking Express (Chung Hing sam lam)",
+    "year": 1994,
+    "rating": 3.9692507579038545,
+    "genres": [
+      "Drama",
+      "Mystery",
+      "Romance"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie123/300/450"
+  },
+  {
+    "id": 124,
+    "title": "Star Maker, The (Uomo delle stelle, L')",
+    "year": 1995,
+    "rating": 3.498432601880878,
+    "genres": [
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie124/300/450"
+  },
+  {
+    "id": 125,
+    "title": "Flirting With Disaster",
+    "year": 1996,
+    "rating": 3.7556850483229107,
+    "genres": [
+      "Comedy"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie125/300/450"
+  },
+  {
+    "id": 126,
+    "title": "NeverEnding Story III, The",
+    "year": 1994,
+    "rating": 2.312136627906977,
+    "genres": [
+      "Adventure",
+      "Children",
+      "Fantasy"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie126/300/450"
+  },
+  {
+    "id": 127,
+    "title": "Silences of the Palace, The (Saimt el Qusur)",
+    "year": 1994,
+    "rating": 3.2560975609756095,
+    "genres": [
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie127/300/450"
+  },
+  {
+    "id": 128,
+    "title": "Jupiter's Wife",
+    "year": 1994,
+    "rating": 3.5,
+    "genres": [
+      "Documentary"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie128/300/450"
+  },
+  {
+    "id": 129,
+    "title": "Pie in the Sky",
+    "year": 1996,
+    "rating": 3.163157894736842,
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie129/300/450"
+  },
+  {
+    "id": 130,
+    "title": "Angela",
+    "year": 1995,
+    "rating": 3.1153846153846154,
+    "genres": [
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie130/300/450"
+  },
+  {
+    "id": 131,
+    "title": "Frankie Starlight",
+    "year": 1995,
+    "rating": 3.2912371134020617,
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie131/300/450"
+  },
+  {
+    "id": 132,
+    "title": "Jade",
+    "year": 1995,
+    "rating": 2.773198304286387,
+    "genres": [
+      "Thriller"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie132/300/450"
+  },
+  {
+    "id": 133,
+    "title": "Nueba Yol",
+    "year": 1995,
+    "rating": 2.6052631578947367,
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie133/300/450"
+  },
+  {
+    "id": 134,
+    "title": "Sonic Outlaws",
+    "year": 1995,
+    "rating": 3.6527777777777777,
+    "genres": [
+      "Documentary"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie134/300/450"
+  },
+  {
+    "id": 135,
+    "title": "Down Periscope",
+    "year": 1996,
+    "rating": 2.9980174464710547,
+    "genres": [
+      "Comedy"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie135/300/450"
+  },
+  {
+    "id": 136,
+    "title": "From the Journals of Jean Seberg",
+    "year": 1995,
+    "rating": 3.549019607843137,
+    "genres": [
+      "Documentary"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie136/300/450"
+  },
+  {
+    "id": 137,
+    "title": "Man of the Year",
+    "year": 1995,
+    "rating": 3.2853982300884956,
+    "genres": [
+      "Documentary"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie137/300/450"
+  },
+  {
+    "id": 138,
+    "title": "Neon Bible, The",
+    "year": 1995,
+    "rating": 3.2846715328467155,
+    "genres": [
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie138/300/450"
+  },
+  {
+    "id": 139,
+    "title": "Target",
+    "year": 1995,
+    "rating": 3.073170731707317,
+    "genres": [
+      "Action",
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie139/300/450"
+  },
+  {
+    "id": 140,
+    "title": "Up Close and Personal",
+    "year": 1996,
+    "rating": 3.2938103686181748,
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie140/300/450"
+  },
+  {
+    "id": 141,
+    "title": "Birdcage, The",
+    "year": 1996,
+    "rating": 3.5122161671207994,
+    "genres": [
+      "Comedy"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie141/300/450"
+  },
+  {
+    "id": 142,
+    "title": "Shadows (Cienie)",
+    "year": 1988,
+    "rating": 3.0609756097560976,
+    "genres": [
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie142/300/450"
+  },
+  {
+    "id": 143,
+    "title": "Gospa",
+    "year": 1995,
+    "rating": 2.142857142857143,
+    "genres": [
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie143/300/450"
+  },
+  {
+    "id": 144,
+    "title": "Brothers McMullen, The",
+    "year": 1995,
+    "rating": 3.4771365149833517,
+    "genres": [
+      "Comedy"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie144/300/450"
+  },
+  {
+    "id": 145,
+    "title": "Bad Boys",
+    "year": 1995,
+    "rating": 3.2507724425887266,
+    "genres": [
+      "Action",
+      "Comedy",
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie145/300/450"
+  },
+  {
+    "id": 146,
+    "title": "Amazing Panda Adventure, The",
+    "year": 1995,
+    "rating": 2.9120689655172414,
+    "genres": [
+      "Adventure",
+      "Children"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie146/300/450"
+  },
+  {
+    "id": 147,
+    "title": "Basketball Diaries, The",
+    "year": 1995,
+    "rating": 3.5829286061194754,
+    "genres": [
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie147/300/450"
+  },
+  {
+    "id": 148,
+    "title": "Awfully Big Adventure, An",
+    "year": 1995,
+    "rating": 2.8893557422969187,
+    "genres": [
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie148/300/450"
+  },
+  {
+    "id": 149,
+    "title": "Amateur",
+    "year": 1994,
+    "rating": 3.6943171402383133,
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie149/300/450"
+  },
+  {
+    "id": 150,
+    "title": "Apollo 13",
+    "year": 1995,
+    "rating": 3.86859786089541,
+    "genres": [
+      "Adventure",
+      "Drama",
+      "IMAX"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie150/300/450"
+  },
+  {
+    "id": 151,
+    "title": "Rob Roy",
+    "year": 1995,
+    "rating": 3.539037729866836,
+    "genres": [
+      "Action",
+      "Drama",
+      "Romance",
+      "War"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie151/300/450"
+  },
+  {
+    "id": 152,
+    "title": "Addiction, The",
+    "year": 1995,
+    "rating": 3.1044546850998462,
+    "genres": [
+      "Drama",
+      "Horror"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie152/300/450"
+  },
+  {
+    "id": 153,
+    "title": "Batman Forever",
+    "year": 1995,
+    "rating": 2.894727234003712,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy",
+      "Crime"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie153/300/450"
+  },
+  {
+    "id": 154,
+    "title": "Beauty of the Day (Belle de jour)",
+    "year": 1967,
+    "rating": 3.8019933554817276,
+    "genres": [
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie154/300/450"
+  },
+  {
+    "id": 155,
+    "title": "Beyond Rangoon",
+    "year": 1995,
+    "rating": 3.4079153605015673,
+    "genres": [
+      "Adventure",
+      "Drama",
+      "War"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie155/300/450"
+  },
+  {
+    "id": 156,
+    "title": "Blue in the Face",
+    "year": 1995,
+    "rating": 3.5279615153337343,
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie156/300/450"
+  },
+  {
+    "id": 157,
+    "title": "Canadian Bacon",
+    "year": 1995,
+    "rating": 2.7846687211093992,
+    "genres": [
+      "Comedy",
+      "War"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie157/300/450"
+  },
+  {
+    "id": 158,
+    "title": "Casper",
+    "year": 1995,
+    "rating": 2.932,
+    "genres": [
+      "Adventure",
+      "Children"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie158/300/450"
+  },
+  {
+    "id": 159,
+    "title": "Clockers",
+    "year": 1995,
+    "rating": 3.4169484361792053,
+    "genres": [
+      "Crime",
+      "Drama",
+      "Mystery"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie159/300/450"
+  },
+  {
+    "id": 160,
+    "title": "Congo",
+    "year": 1995,
+    "rating": 2.6047444036084197,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Mystery",
+      "Sci-Fi"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie160/300/450"
+  },
+  {
+    "id": 161,
+    "title": "Crimson Tide",
+    "year": 1995,
+    "rating": 3.744201794481124,
+    "genres": [
+      "Drama",
+      "Thriller",
+      "War"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie161/300/450"
+  },
+  {
+    "id": 162,
+    "title": "Crumb",
+    "year": 1994,
+    "rating": 4.009924937447873,
+    "genres": [
+      "Documentary"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie162/300/450"
+  },
+  {
+    "id": 163,
+    "title": "Desperado",
+    "year": 1995,
+    "rating": 3.445394874659591,
+    "genres": [
+      "Action",
+      "Romance",
+      "Western"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie163/300/450"
+  },
+  {
+    "id": 164,
+    "title": "Devil in a Blue Dress",
+    "year": 1995,
+    "rating": 3.46358511837655,
+    "genres": [
+      "Crime",
+      "Film-Noir",
+      "Mystery",
+      "Thriller"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie164/300/450"
+  },
+  {
+    "id": 165,
+    "title": "Die Hard: With a Vengeance",
+    "year": 1995,
+    "rating": 3.4890247495580438,
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie165/300/450"
+  },
+  {
+    "id": 166,
+    "title": "Doom Generation, The",
+    "year": 1995,
+    "rating": 2.787692307692308,
+    "genres": [
+      "Comedy",
+      "Crime",
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie166/300/450"
+  },
+  {
+    "id": 167,
+    "title": "Feast of July",
+    "year": 1995,
+    "rating": 3.1645569620253164,
+    "genres": [
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie167/300/450"
+  },
+  {
+    "id": 168,
+    "title": "First Knight",
+    "year": 1995,
+    "rating": 3.084698775239987,
+    "genres": [
+      "Action",
+      "Drama",
+      "Romance"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie168/300/450"
+  },
+  {
+    "id": 169,
+    "title": "Free Willy 2: The Adventure Home",
+    "year": 1995,
+    "rating": 2.283650982727814,
+    "genres": [
+      "Adventure",
+      "Children",
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie169/300/450"
+  },
+  {
+    "id": 170,
+    "title": "Hackers",
+    "year": 1995,
+    "rating": 3.1975873015873018,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Crime",
+      "Thriller"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie170/300/450"
+  },
+  {
+    "id": 171,
+    "title": "Jeffrey",
+    "year": 1995,
+    "rating": 3.6030133146461107,
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie171/300/450"
+  },
+  {
+    "id": 172,
+    "title": "Johnny Mnemonic",
+    "year": 1995,
+    "rating": 2.7326066425310875,
+    "genres": [
+      "Action",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie172/300/450"
+  },
+  {
+    "id": 173,
+    "title": "Judge Dredd",
+    "year": 1995,
+    "rating": 2.5382845327819648,
+    "genres": [
+      "Action",
+      "Crime",
+      "Sci-Fi"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie173/300/450"
+  },
+  {
+    "id": 174,
+    "title": "Jury Duty",
+    "year": 1995,
+    "rating": 2.455979284369115,
+    "genres": [
+      "Comedy"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie174/300/450"
+  },
+  {
+    "id": 175,
+    "title": "Kids",
+    "year": 1995,
+    "rating": 3.507602582795251,
+    "genres": [
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie175/300/450"
+  },
+  {
+    "id": 176,
+    "title": "Living in Oblivion",
+    "year": 1995,
+    "rating": 3.854633939906898,
+    "genres": [
+      "Comedy"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie176/300/450"
+  },
+  {
+    "id": 177,
+    "title": "Lord of Illusions",
+    "year": 1995,
+    "rating": 2.8859118409680207,
+    "genres": [
+      "Horror"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie177/300/450"
+  },
+  {
+    "id": 178,
+    "title": "Love & Human Remains",
+    "year": 1993,
+    "rating": 3.388,
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie178/300/450"
+  },
+  {
+    "id": 179,
+    "title": "Mad Love",
+    "year": 1995,
+    "rating": 2.7506102522375917,
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie179/300/450"
+  },
+  {
+    "id": 180,
+    "title": "Mallrats",
+    "year": 1995,
+    "rating": 3.5872619047619048,
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie180/300/450"
+  },
+  {
+    "id": 181,
+    "title": "Mighty Morphin Power Rangers: The Movie",
+    "year": 1995,
+    "rating": 1.9290018832391713,
+    "genres": [
+      "Action",
+      "Children"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie181/300/450"
+  },
+  {
+    "id": 182,
+    "title": "Moonlight and Valentino",
+    "year": 1995,
+    "rating": 3.091822094691535,
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie182/300/450"
+  },
+  {
+    "id": 183,
+    "title": "Mute Witness",
+    "year": 1994,
+    "rating": 3.3648208469055376,
+    "genres": [
+      "Comedy",
+      "Horror",
+      "Thriller"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie183/300/450"
+  },
+  {
+    "id": 184,
+    "title": "Nadja",
+    "year": 1994,
+    "rating": 3.1036585365853657,
+    "genres": [
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie184/300/450"
+  },
+  {
+    "id": 185,
+    "title": "Net, The",
+    "year": 1995,
+    "rating": 3.1104273295962304,
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie185/300/450"
+  },
+  {
+    "id": 186,
+    "title": "Nine Months",
+    "year": 1995,
+    "rating": 2.891730529317412,
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie186/300/450"
+  },
+  {
+    "id": 187,
+    "title": "Party Girl",
+    "year": 1995,
+    "rating": 3.451219512195122,
+    "genres": [
+      "Comedy"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie187/300/450"
+  },
+  {
+    "id": 188,
+    "title": "Prophecy, The",
+    "year": 1995,
+    "rating": 3.342473979183347,
+    "genres": [
+      "Fantasy",
+      "Horror",
+      "Mystery"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie188/300/450"
+  },
+  {
+    "id": 189,
+    "title": "Reckless",
+    "year": 1995,
+    "rating": 3.0014880952380953,
+    "genres": [
+      "Comedy",
+      "Fantasy"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie189/300/450"
+  },
+  {
+    "id": 190,
+    "title": "Safe",
+    "year": 1995,
+    "rating": 3.566145833333333,
+    "genres": [
+      "Thriller"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie190/300/450"
+  },
+  {
+    "id": 191,
+    "title": "Scarlet Letter, The",
+    "year": 1995,
+    "rating": 2.676081730769231,
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie191/300/450"
+  },
+  {
+    "id": 192,
+    "title": "Show, The",
+    "year": 1995,
+    "rating": 3.0246913580246915,
+    "genres": [
+      "Documentary"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie192/300/450"
+  },
+  {
+    "id": 193,
+    "title": "Showgirls",
+    "year": 1995,
+    "rating": 2.2340568060021435,
+    "genres": [
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie193/300/450"
+  },
+  {
+    "id": 194,
+    "title": "Smoke",
+    "year": 1995,
+    "rating": 3.84967155128853,
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie194/300/450"
+  },
+  {
+    "id": 195,
+    "title": "Something to Talk About",
+    "year": 1995,
+    "rating": 3.0894509561998764,
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie195/300/450"
+  },
+  {
+    "id": 196,
+    "title": "Species",
+    "year": 1995,
+    "rating": 2.8502714998532435,
+    "genres": [
+      "Horror",
+      "Sci-Fi"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie196/300/450"
+  },
+  {
+    "id": 197,
+    "title": "Stars Fell on Henrietta, The",
+    "year": 1995,
+    "rating": 3.0681818181818183,
+    "genres": [
+      "Drama"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie197/300/450"
+  },
+  {
+    "id": 198,
+    "title": "Strange Days",
+    "year": 1995,
+    "rating": 3.4170950453899156,
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama",
+      "Mystery",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie198/300/450"
+  },
+  {
+    "id": 199,
+    "title": "Umbrellas of Cherbourg, The (Parapluies de Cherbourg, Les)",
+    "year": 1964,
+    "rating": 3.783641160949868,
+    "genres": [
+      "Drama",
+      "Musical",
+      "Romance"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie199/300/450"
+  },
+  {
+    "id": 200,
+    "title": "Tie That Binds, The",
+    "year": 1995,
+    "rating": 2.836283185840708,
+    "genres": [
+      "Thriller"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie200/300/450"
+  },
+  {
+    "id": 201,
+    "title": "Three Wishes",
+    "year": 1995,
+    "rating": 3.0273972602739727,
+    "genres": [
+      "Drama",
+      "Fantasy"
+    ],
+    "director": "Unknown",
+    "cast": [],
+    "poster": "https://picsum.photos/seed/movie201/300/450"
+  }
+]
