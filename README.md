@@ -79,14 +79,15 @@ npm start
 # Abrir em http://localhost:8000
 ```
 
-### 🗄️ Opcional: Rodar ChromaDB localmente
+### 🗄️ ChromaDB
 
-Para que a integração vetorial funcione, você pode iniciar um servidor Chroma
-via Docker. Ele não é obrigatório — o código faz _fallback_ se o serviço não
-estiver acessível.
+O sistema agora **inicia o ChromaDB automaticamente** ao executar `npm start`. Ele utiliza a instalação local no diretório `.venv` e persiste os dados em `chroma_data/`.
+
+Um **Proxy de CORS** também é iniciado na porta 8001 para permitir que o Web Worker no navegador se comunique com o servidor ChromaDB na porta 8000 sem problemas de segurança.
+
+Caso deseje rodar via Docker (opcional):
 
 ```bash
-# executar uma instância local de ChromaDB
 docker run -p 8000:8000 chromadb/chroma
 ```
 
@@ -173,7 +174,7 @@ Datasets recomendados:
 
 ## 📈 Próximas Melhorias
 
-- [ ] Persistência com ChromaDB
+- [x] Integração e Persistência com ChromaDB
 - [ ] API REST para servir recomendações
 - [ ] Dashboard de análise
 - [ ] Fine-tuning de hiperparâmetros

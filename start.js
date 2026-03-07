@@ -9,6 +9,16 @@ const serverProcess = spawn('npx', ['serve', '.', '-l', '8080'], {
     shell: true
 });
 
+console.log('Iniciando o ChromaDB na porta 8000...');
+// Inicia o servidor ChromaDB usando o executável do .venv
+const chromaProcess = spawn('.venv\\Scripts\\chroma.exe', ['run', '--path', './chroma_data', '--port', '8000'], {
+    stdio: 'inherit',
+    shell: true
+});
+
+// Aguarda um pouco para o ChromaDB subir antes de iniciar o proxy
+await new Promise(resolve => setTimeout(resolve, 2000));
+
 console.log('Iniciando o Proxy de CORS...');
 // Inicia o proxy para o ChromaDB
 const proxyProcess = spawn('node', ['proxy.js'], {
@@ -37,6 +47,7 @@ setTimeout(async () => {
             console.log('\nNavegador fechado. Encerrando o processo Node...');
             serverProcess.kill();
             proxyProcess.kill();
+            chromaProcess.kill();
             process.exit(0);
         });
     } catch (error) {
