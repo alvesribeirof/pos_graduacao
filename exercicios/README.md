@@ -4,15 +4,15 @@ Colecao de exercicios praticos da disciplina, organizada por exemplos independen
 
 ## Estrutura
 
-- [exercicios/README.md](exercicios/README.md): resumo curto dos projetos.
-- [exercicios/exemplo-00/](exercicios/exemplo-00/): rede neural para classificacao de alunos.
-- [exercicios/exemplo-01/](exercicios/exemplo-01/): recomendacao de produtos com dados locais.
-- [exercicios/exemplo-02/](exercicios/exemplo-02/): classificacao de imagens e pipeline com tooling web.
-- [exercicios/exemplo-03/](exercicios/exemplo-03/): Web AI API com prompt.
-- [exercicios/exemplo-04/](exercicios/exemplo-04/): Web AI API com chat.
-- [exercicios/exemplo-05/](exercicios/exemplo-05/): Web AI API multimodal.
-- [exercicios/exemplo-ollama/](exercicios/exemplo-ollama/): exemplo de requisicao para Ollama.
-- [exercicios/exemplo-openrouter/](exercicios/exemplo-openrouter/): exemplo de requisicao para OpenRouter.
+- [README.md](README.md): visao geral desta pasta.
+- [exemplo-00/](exemplo-00/): rede neural para classificacao de alunos.
+- [exemplo-01/](exemplo-01/): recomendacao de produtos com dados locais.
+- [exemplo-02/](exemplo-02/): classificacao de imagens e pipeline com tooling web.
+- [exemplo-03/](exemplo-03/): Web AI API com prompt.
+- [exemplo-04/](exemplo-04/): Web AI API com chat.
+- [exemplo-05/](exemplo-05/): Web AI API multimodal.
+- [exemplo-ollama/](exemplo-ollama/): exemplo de requisicao para Ollama.
+- [exemplo-openrouter/](exemplo-openrouter/): exemplo de requisicao para OpenRouter.
 
 ## Requisitos
 
@@ -37,6 +37,4 @@ npm start
 
 ## Referencia Rapida
 
-Resumo dos projetos em [exercicios/exercicios/README.md](exercicios/exercicios/README.md).
-
-Para voltar ao indice principal do repositorio: [README.md](../README.md)
+Para voltar ao indice principal do repositorio: [../README.md](../README.md)
