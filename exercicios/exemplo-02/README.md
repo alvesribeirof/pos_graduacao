@@ -44,3 +44,10 @@ A aplicacao sera servida em http://localhost:8080. Evite abrir por file:// devid
 - Ajuste de versoes para resolver conflitos de peer dependencies.
 - Regeneracao de lockfile para ambiente reproduzivel.
 - Auditoria de producao (`npm audit --omit=dev`) sem vulnerabilidades.
+
+## Changelog
+
+### 2026-03-13
+- Security: dependency and lockfile updates applied.
+- Maintenance: package ecosystem aligned for stable install.
+- Docs: README standardized with security/update notes.

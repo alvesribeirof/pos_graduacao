@@ -201,3 +201,10 @@ npm run build
 - Atualizacao de dependencias e lockfile do projeto.
 - Aplicacao de correcoes de seguranca nao destrutivas.
 - Auditoria de producao (`npm audit --omit=dev`) sem vulnerabilidades.
+
+## Changelog
+
+### 2026-03-13
+- Security: dependency and lockfile updates applied.
+- Maintenance: package ecosystem aligned for stable install.
+- Docs: README standardized with security/update notes.
