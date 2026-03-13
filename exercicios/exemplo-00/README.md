@@ -1,33 +1,30 @@
-# 🧠 Exemplo 00 - Classificação com TensorFlow.js
+# Exemplo 00 - Classificacao com TensorFlow.js
 
-Este projeto demonstra a criação e treinamento de uma rede neural simples utilizando **TensorFlow.js** em ambiente Node.js para classificar usuários em categorias (Premium, Medium, Basic) com base em seus perfis.
+Exemplo introdutorio de rede neural em Node.js com TensorFlow.js para classificar usuarios em categorias.
 
-## 🎯 Objetivo
+## Objetivo
 
-Aprender os conceitos fundamentais de Machine Learning com JS:
-- Normalização de dados.
-- Arquitetura de camadas (`dense`).
-- Funções de ativação (`relu`, `softmax`).
-- Processo de treinamento (`fit`) e predição.
+- Demonstrar pre-processamento e normalizacao de dados.
+- Treinar uma rede neural densa simples.
+- Realizar predicao de classe com probabilidades.
 
-## 🏗️ Arquitetura da Rede
+## Requisitos
 
-- **Input Shape**: 7 dimensões (Idade, Cores, Cidade).
-- **Hidden Layer**: 80 neurônios com ativação ReLU.
-- **Output Layer**: 3 neurônios (categorias) com ativação Softmax para probabilidade.
+- Node.js 18+
+- npm 9+
 
-## 🚀 Como Executar
-
-Certifique-se de ter o Node.js instalado.
+## Como Executar
 
 ```bash
-# Instalar dependências
 npm install
-
-# Executar o script
 node index.js
 ```
 
-## 📊 Estrutura de Entrada
+## Arquivos Principais
 
-Os dados são normalizados para o intervalo [0, 1] antes de serem alimentados na rede, garantindo maior estabilidade no treinamento.
+- index.js: definicao, treino e inferencia do modelo.
+- package.json: dependencias e metadados do exemplo.
+
+## Observacoes
+
+Os dados de entrada sao normalizados para melhorar a estabilidade do treinamento.

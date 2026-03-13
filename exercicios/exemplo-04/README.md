@@ -1,27 +1,29 @@
-# 💬 Exemplo 04 - AI Chat com Parâmetros
+# Exemplo 04 - Web AI Chat com Parametros
 
-Um chat interativo utilizando a **Prompt API (Gemini Nano)** nativa do Chrome, com interface para ajuste fino de parâmetros de geração.
+Chat interativo com Prompt API no Chrome, incluindo configuracao de parametros de geracao e resposta em streaming.
 
-## 🎯 Funcionalidades
+## Objetivo
 
-- **Ajuste de Parâmetros**: Controles deslizantes para `Temperature` e `TopK`.
-- **Streaming de Resposta**: Visualização da resposta da IA em tempo real.
-- **Botão Stop**: Possibilidade de interromper a geração a qualquer momento via `AbortController`.
-- **Checagem de Requisitos**: Validação automática de navegador, flags e status do download do modelo.
+- Construir interface de chat com IA nativa no navegador.
+- Controlar parametros de inferencia como temperature e topK.
+- Permitir cancelamento da resposta com AbortController.
 
-## 📋 Configuração do Ambiente
+## Requisitos
 
-1. Use o **Google Chrome** recente.
-2. Ative a flag: `chrome://flags/#prompt-api-for-gemini-nano`.
-3. Reinicie o navegador.
+- Google Chrome recente com suporte a Prompt API.
+- Flag ativa: chrome://flags/#prompt-api-for-gemini-nano
 
-## 🚀 Como Executar
+## Como Executar
 
 ```bash
-# Instalar dependências (para o servidor de desenvolvimento)
 npm install
-
-# Iniciar o servidor
 npm run dev
 ```
-Abra em `http://localhost:8080`.
+
+Abra em http://localhost:8080.
+
+## Arquivos Principais
+
+- index.html: estrutura da interface.
+- index.js: logica de chat, parametros e streaming.
+- style.css: estilos da aplicacao.

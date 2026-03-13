@@ -1,39 +1,37 @@
-# E-commerce Recommendation System
+# Exemplo 01 - Recomendacao de Produtos
 
-A web application that displays user profiles and product listings, with the ability to track user purchases for future machine learning recommendations using TensorFlow.js.
+Aplicacao web de e-commerce para selecao de usuarios, visualizacao de produtos e registro de compras, preparada para evolucao com recomendacao usando TensorFlow.js.
 
-## Project Structure
+## Objetivo
 
-- `index.html` - Main HTML file for the application
-- `index.js` - Entry point for the application
-- `view/` - Contains classes for managing the DOM and templates
-- `controller/` - Contains controllers to connect views and services
-- `service/` - Contains business logic for data handling
-- `data/` - Contains JSON files with user and product data
+- Exibir perfis de usuario e historico de compras.
+- Listar produtos e registrar interacoes.
+- Organizar arquitetura em controller, service e view.
 
-## Setup and Run
+## Requisitos
 
-1. Install dependencies:
-```
+- Node.js 18+
+- npm 9+
+
+## Como Executar
+
+```bash
 npm install
-```
-
-2. Start the application:
-```
 npm start
 ```
 
-3. Open your browser and navigate to `http://localhost:8080`
+Abra no navegador em http://localhost:8080.
 
-## Features
+## Estrutura Principal
 
-- User profile selection with details display
-- Past purchase history display
-- Product listing with "Buy Now" functionality
-- Purchase tracking using sessionStorage
+- index.html: interface base.
+- src/index.js: ponto de entrada da aplicacao.
+- src/controller: controle de fluxo da interface e treinamento.
+- src/service: regras de negocio e manipulacao de dados.
+- src/view: componentes visuais e templates.
+- data: base de usuarios e produtos em JSON.
 
-## Future Enhancements
+## Proximos Passos
 
-- TensorFlow.js-based recommendation engine
-- User similarity analysis
-- Product recommendation based on purchase history
+- Integrar recomendacao com TensorFlow.js.
+- Aprimorar ranking por similaridade de usuarios.

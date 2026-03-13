@@ -1,20 +1,23 @@
-# 🤖 Exemplo 03 - Web AI: Prompt API Básica
+# Exemplo 03 - Web AI Prompt API Basica
 
-Uma implementação simples demonstrando como interagir com a **Prompt API (Gemini Nano)** nativa do Google Chrome.
+Exemplo simples de uso da Prompt API nativa do Chrome com Gemini Nano para geracao de texto.
 
-## 🎯 Funcionalidades
+## Objetivo
 
-- Verificação de parâmetros do modelo de linguagem.
-- Uso de `LanguageModel.create()` para iniciar uma sessão.
-- Geração de respostas em streaming (`promptStreaming`).
-- Conversão de Markdown para HTML na interface.
+- Verificar disponibilidade do modelo no navegador.
+- Criar sessao com LanguageModel.create.
+- Exibir resposta em streaming na interface.
 
-## 📋 Requisitos
+## Requisitos
 
-Para visualizar este exemplo, você deve estar usando o **Google Chrome** (ou Canary) e ter as flags de IA nativa ativas:
-1. `chrome://flags/#prompt-api-for-gemini-nano` -> **Enabled**.
-2. Garantir que o modelo (`Gemini Nano`) foi baixado pelo navegador.
+- Google Chrome (ou Canary) com suporte a Prompt API.
+- Flag ativa: chrome://flags/#prompt-api-for-gemini-nano
+- Modelo Gemini Nano baixado no navegador.
 
-## 🚀 Como Visualizar
+## Como Executar
 
-Basta abrir o arquivo `index.html` diretamente no navegador Chrome ou usar um servidor estático local.
+Abra o arquivo index.html no Chrome ou sirva a pasta com um servidor estatico local.
+
+## Arquivo Principal
+
+- index.html: interface e fluxo de chamada da Prompt API.

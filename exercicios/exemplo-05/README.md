@@ -1,40 +1,50 @@
-# 📄 Exemplo 05 - Local RAG (Retrieval-Augmented Generation)
+# Exemplo 05 - Local RAG com PDF
 
-Este é o exemplo mais avançado da série, implementando um pipeline completo de **RAG local** que permite conversar com arquivos PDF sem enviar dados para a nuvem.
+Exemplo avancado de RAG local para perguntas sobre PDFs, combinando embeddings no navegador com armazenamento vetorial no ChromaDB.
 
-## 🚀 Tecnologias Utilizadas
+## Objetivo
 
-- **Gemini Nano (Prompt API)**: LLM nativo do Chrome para geração de texto.
-- **Transformers.js (Xenova)**: Execução local do modelo `all-MiniLM-L6-v2` para geração de embeddings no browser.
-- **ChromaDB**: Banco de dados vetorial local para armazenamento e busca semântica.
-- **PDF.js**: Extração de texto de documentos PDF diretamente no cliente.
-- **Chrome Translation API**: Tradução automática de termos quando necessário.
+- Fazer ingestao local de PDF.
+- Gerar embeddings no browser.
+- Recuperar contexto relevante e responder com Gemini Nano.
 
-## 🧠 Como Funciona
+## Tecnologias
 
-1. **Upload**: O usuário faz o upload de um PDF.
-2. **Chunking**: O texto é dividido em blocos (chunks).
-3. **Embeddings**: Transfomers.js gera vetores numéricos para cada bloco.
-4. **Vector Store**: Os vetores e textos são salvos no ChromaDB local.
-5. **Retrieval**: Ao fazer uma pergunta, o sistema busca os 3 trechos mais relevantes do PDF.
-6. **Augmented Prompt**: Os trechos são enviados ao Gemini Nano como contexto para a resposta final.
+- Prompt API (Gemini Nano)
+- Transformers.js
+- ChromaDB
+- PDF.js
+- Translation API do Chrome
 
-## 🛠️ Requisitos e Setup
+## Requisitos
 
-### Flags do Chrome
-Ative as seguintes flags em `chrome://flags`:
-- `#prompt-api-for-gemini-nano`
-- `#translation-api`
-- `#language-detector-api`
+- Google Chrome com suporte as APIs nativas.
+- Flags ativas em chrome://flags:
+	- #prompt-api-for-gemini-nano
+	- #translation-api
+	- #language-detector-api
+- Servidor ChromaDB local em execucao.
 
-### ChromaDB Local
-Você precisa de um servidor ChromaDB rodando e acessível com CORS liberado.
+## Como Executar
+
 ```bash
-# Executar o servidor via Python
+npm install
 python run_chroma.py
 ```
 
-## 📂 Estrutura Modular
-- `services/`: Lógica de IA, RAG e Tradução.
-- `controllers/`: Gerenciamento de eventos e fluxo de dados.
-- `views/`: Manipulação do DOM e interface.
+Depois abra index.html conforme instrucoes do projeto.
+
+## Fluxo RAG
+
+1. Upload do PDF.
+2. Chunking do texto.
+3. Geracao de embeddings.
+4. Persistencia no ChromaDB.
+5. Recuperacao de contexto relevante.
+6. Resposta final com prompt enriquecido.
+
+## Estrutura Principal
+
+- controllers: fluxo de eventos.
+- services: IA, embeddings e recuperacao.
+- views: interface.
