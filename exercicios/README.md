@@ -11,6 +11,10 @@ Colecao de exercicios praticos da disciplina, organizada por exemplos independen
 - [exemplo-03/](exemplo-03/): Web AI API com prompt.
 - [exemplo-04/](exemplo-04/): Web AI API com chat.
 - [exemplo-05/](exemplo-05/): Web AI API multimodal.
+- [exemplo-06/](exemplo-06/): prompt engineering para scaffolding e testes com Playwright.
+- [exemplo-07/](exemplo-07/): browser automation orientada por prompt.
+- [exemplo-08/](exemplo-08/): demo Next.js com Better Auth, GitHub OAuth e SQLite.
+- [exemplo-09/](exemplo-09/): stack de observabilidade com aplicacao instrumentada.
 - [exemplo-ollama/](exemplo-ollama/): exemplo de requisicao para Ollama.
 - [exemplo-openrouter/](exemplo-openrouter/): exemplo de requisicao para OpenRouter.
 
