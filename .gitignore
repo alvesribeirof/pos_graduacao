@@ -1,0 +1,10 @@
+# Global local-only files
+**/.env
+**/.env.local
+**/node_modules/
+**/chroma_data/
+
+# OS/editor artifacts
+**/.DS_Store
+**/.idea/
+**/.vscode/
