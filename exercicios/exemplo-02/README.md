@@ -37,3 +37,10 @@ A aplicacao sera servida em http://localhost:8080. Evite abrir por file:// devid
 - dist: build pronto para execucao.
 - machine-learning: recursos de ML usados no projeto.
 - vendor: dependencias auxiliares.
+
+## Atualizacao de Seguranca e Dependencias (2026-03-13)
+
+- Atualizacao de dependencias com foco em seguranca e compatibilidade.
+- Ajuste de versoes para resolver conflitos de peer dependencies.
+- Regeneracao de lockfile para ambiente reproduzivel.
+- Auditoria de producao (`npm audit --omit=dev`) sem vulnerabilidades.

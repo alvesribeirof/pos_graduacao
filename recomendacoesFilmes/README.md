@@ -195,3 +195,9 @@ npm run build
 - [TensorFlow.js Documentation](https://js.tensorflow.org/)
 - [Kaggle Datasets](https://www.kaggle.com/datasets)
 - [Recommendation Systems](https://en.wikipedia.org/wiki/Recommender_system)
+
+## 🔒 Atualizacao de Seguranca e Dependencias (2026-03-13)
+
+- Atualizacao de dependencias e lockfile do projeto.
+- Aplicacao de correcoes de seguranca nao destrutivas.
+- Auditoria de producao (`npm audit --omit=dev`) sem vulnerabilidades.
