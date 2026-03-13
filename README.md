@@ -1,36 +1,49 @@
-# Pós-Graduação em Inteligência Artificial e Desenvolvimento de Software
+# Pos-Graduacao em Inteligencia Artificial e Desenvolvimento de Software
 
-Este repositório contém os projetos e exercícios desenvolvidos durante a pós-graduação, focando em Inteligência Artificial, Aprendizado de Máquina e integração de tecnologias modernas.
+Repositorio com exercicios e projetos praticos da pos-graduacao, com foco em IA aplicada, recomendacao, NLP e integracao com ferramentas modernas.
 
-## 🚀 Projetos Principais
+## Estrutura
 
-### 1. [Sistema de Recomendação de Filmes](file:///c:/Repositorio/pos_graduacao/recomendacoesFilmes/README.md)
-Um sistema completo de recomendação que utiliza **TensorFlow.js** para processamento de dados e **ChromaDB** como banco de dados vetorial para busca semântica.
-- Integração com dados do Kaggle.
-- Interface web interativa.
-- Pipeline de treinamento e recomendação local.
+- [recomendacoesFilmes/](recomendacoesFilmes/): projeto principal de recomendacao de filmes com TensorFlow.js e integracao com ChromaDB.
+- [exercicios/](exercicios/): colecao de exemplos e desafios por modulo.
 
-### 2. [Exercícios e Exemplos (UNIPDS)](file:///c:/Repositorio/pos_graduacao/exercicios/README.md)
-Uma coleção de projetos práticos cobrindo diversos domínios da IA:
-- **Projeto 00**: Rede neural para classificação de alunos.
-- **Projeto 01**: Sistema de recomendação de produtos.
-- **Projeto 02**: Classificação de imagens com **DuckHunt & YOLO**.
-- **Projeto 03-05**: Implementações de **Web AI API** (Prompt, Chat, Multimodal).
+## Projeto Principal
 
-## 🛠️ Tecnologias Utilizadas
+Em [recomendacoesFilmes/](recomendacoesFilmes/) voce encontra:
 
-- **Linguagens**: JavaScript (Node.js, Web).
-- **IA/ML**: TensorFlow.js, YOLO (Object Detection).
-- **Banco de Dados**: ChromaDB (Vector Database).
-- **Ferramentas**: Kaggle CLI, ESLint, Jest (Testes).
+- treino e recomendacao com TensorFlow.js
+- worker para tarefas pesadas no navegador
+- scripts de dados (incluindo Kaggle)
+- testes com Jest
 
-## ⚙️ Como Começar
+Documentacao completa: [recomendacoesFilmes/README.md](recomendacoesFilmes/README.md)
 
-1. Certifique-se de ter o [Node.js](https://nodejs.org/) instalado.
-2. Clone o repositório.
-3. Navegue até o diretório do projeto desejado (ex: `recomendacoesFilmes`).
-4. Execute `npm install` para instalar as dependências.
-5. Siga as instruções específicas no `README.md` de cada pasta.
+## Exercicios
 
----
-*Desenvolvido como parte do currículo de Pós-Graduação.*
+A pasta [exercicios/](exercicios/) contem os exemplos da disciplina, incluindo:
+
+- classificacao e recomendacao
+- uso de APIs para IA no browser
+- exemplos multimodais e pipelines de dados
+
+Visao geral: [exercicios/README.md](exercicios/README.md)
+
+## Como Executar
+
+Pre-requisitos:
+
+- Node.js 18+
+- npm 9+
+
+Passos basicos:
+
+1. Clone o repositorio.
+2. Entre na pasta do projeto desejado.
+3. Instale dependencias com `npm install`.
+4. Execute o script do projeto, por exemplo:
+	- `npm start`
+	- `npm test`
+
+## Licenca
+
+Uso academico e educacional. Consulte os arquivos de licenca em cada projeto quando aplicavel.
