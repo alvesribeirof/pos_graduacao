@@ -1,0 +1,17 @@
+# Dependências
+node_modules/
+
+# Variáveis de ambiente (contém segredos)
+.env
+
+# Dados de runtime do Neo4j (gerados pelo Docker)
+neo4j/data/
+neo4j/logs/
+
+# Cache e builds
+dist/
+*.js.map
+neo4j/plugins/*.jar
+
+# Saídas geradas em runtime
+respostas/
